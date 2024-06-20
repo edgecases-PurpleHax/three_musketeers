@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Common Games{% endblock %}
+
+{% block content %}
+<h1>Common Games</h1>
+<ul class="list-group">
+    {% for game in games %}
+        <li class="list-group-item">{{ game }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
